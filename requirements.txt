@@ -15,8 +15,8 @@ bcrypt
 segno
 pillow
 
-
 librosa
 torch
 
 webrtcvad-wheels
+resemblyzer
