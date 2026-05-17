@@ -15,16 +15,79 @@ def style_background_home():
         </style>
     """, unsafe_allow_html=True)
 
-
 def style_background_dashboard():
     st.markdown("""
         <style>
+
             .stApp {
-                background: #5865F2 !important;
+                background: linear-gradient(
+                    rgba(255,255,255,0.92),
+                    rgba(255,255,255,0.92)
+                ),
+                url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f");
+                
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
             }
+
+            /* Main content cards */
+            div[data-testid="stVerticalBlock"] > div {
+                border-radius: 25px;
+            }
+
+            /* Headers visibility */
+            h1 {
+                color: black !important;
+            }
+
+            h2 {
+                color: black !important;
+            }
+
+            h3, h4, h5, h6, p, label, span {
+                color: #1e293b !important;
+            }
+
+            /* Input fields */
+            .stTextInput input {
+                background-color: white !important;
+                color: black !important;
+                border: 2px solid #dbe2ff !important;
+                border-radius: 15px !important;
+                padding: 10px !important;
+            }
+
+            /* Camera input area */
+            section[data-testid="stFileUploader"] {
+                background-color: rgba(255,255,255,0.75);
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            /* Audio recorder area */
+            div[data-testid="stAudioInput"] {
+                background-color: rgba(255,255,255,0.75);
+                border-radius: 20px;
+                padding: 15px;
+            }
+
+            /* Container cards */
+            div[data-testid="stContainer"] {
+                background-color: rgba(255,255,255,0.65);
+                backdrop-filter: blur(10px);
+                border-radius: 25px;
+                padding: 20px;
+            }
+
+            /* Better button hover */
+            .stButton button:hover {
+                transform: scale(1.03);
+                transition: 0.2s ease;
+            }
+
         </style>
     """, unsafe_allow_html=True)
-
 
 def style_base_layout():
     st.markdown("""
