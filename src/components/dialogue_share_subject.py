@@ -7,7 +7,7 @@ import io
 def share_subject_dialogue(subject_name, subject_code):
 
     # CHANGE THIS TO YOUR DEPLOYED URL
-    app_domain = "snapclass-main.streamlit.app"
+    app_domain = "snapattendance-ai.streamlit.app"
     # Join URL
     join_url = f"{app_domain}/?join-code={subject_code}"
 
