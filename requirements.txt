@@ -20,3 +20,4 @@ torch
 
 webrtcvad-wheels
 resemblyzer
+opencv-python-headless
